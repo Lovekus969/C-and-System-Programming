@@ -141,3 +141,26 @@ When fork() is called:
 💡 Important
 
 The parent and child run independently, so output order may vary.
+
+Parent process = Player X
+
+Child process = Player O
+
+Both processes share the board using a shared file
+
+You can see how process creation works and how system calls behave
+
+You can clearly observe parent PID, child PID, and how they alternate
+
+⚠️ Note:
+Real Tic-Tac-Toe in fork() is tricky because parent and child do not share memory, so we must communicate through something like:
+
+A shared temporary file → simplest for teaching
+
+Or pipes
+
+Or shared memory (shmget) → advanced
+
+Or sockets → even more advanced
+
+For learning System Programming, using a shared file + fork() is PERFECT.
