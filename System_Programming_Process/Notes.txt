@@ -61,5 +61,11 @@ Example:
 passwd program allows updating /etc/shadow, which requires root permissions.
 
 Real UID = your ID
-
-Effective UID = root
+    
+    Effective UID = root
+    
+    Saved IDs
+    
+    They store your previous effective UID/GID so that a program can temporarily drop and regain privileges.
+    
+    Examples in system utilities.
