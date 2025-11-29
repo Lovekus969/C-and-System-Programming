@@ -124,3 +124,20 @@ Return value	Meaning
 < 0	Fork failed (no child created)
 0	Code running in the child process
 > 0	Code running in the parent process (value is child's PID)
+
+How Process Creation Happens
+
+When fork() is called:
+
+  The OS creates a copy of the parent process.
+  
+  Both processes have:
+  
+      Their own memory
+      Their own stack
+      Their own program counter
+      Both continue execution from the same line after fork().
+  
+💡 Important
+
+The parent and child run independently, so output order may vary.
