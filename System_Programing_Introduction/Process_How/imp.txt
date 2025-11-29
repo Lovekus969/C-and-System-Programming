@@ -25,3 +25,14 @@ printf uses buffered output.
 fflush(stdout) ensures all buffered text is written to the file before you switch stdout back to console.
 
 Otherwise, some text may not appear in the file.
+
+Restoring stdout
+dup2(stdout_save, STDOUT_FILENO);
+close(stdout_save);
+
+
+Now:
+
+stdout is restored to the original console
+
+You clean up the backup
