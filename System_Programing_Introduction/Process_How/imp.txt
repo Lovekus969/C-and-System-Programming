@@ -8,3 +8,11 @@ When any process starts, three file descriptors are automatically opened:
 | `stdin`  | **0**      | Standard Input  | Keyboard (by default) |
 | `stdout` | **1**      | Standard Output | Console screen        |
 | `stderr` | **2**      | Standard Error  | Console screen        |
+
+
+
+stdout_save = dup(STDOUT_FILENO);
+✔ What dup() does:
+
+dup(old_fd) creates a copy of the file descriptor.
+stdout_save = dup(1);
