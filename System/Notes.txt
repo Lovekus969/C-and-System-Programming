@@ -65,3 +65,11 @@ These numbers are system call numbers.
 
 Every system call has a unique ID.
 This is how the kernel knows which service you are asking for.
+
+
+Why do we have system call numbers?
+
+Because in the kernel, system calls are accessed with:
+
+mov $4, %eax      ; 4 = SYS_write
+int $0x80         ; interrupt to kernel
