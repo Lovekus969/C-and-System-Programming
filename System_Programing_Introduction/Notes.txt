@@ -87,3 +87,15 @@ Important facts:
 errno is not cleared on success → it only changes when a system call fails.
 
 So you must check the return value first, then check errno only if the return value indicates an error (usually -1).
+
+
+Program 1: Using open(), read(), write(), close() + Error Handling
+
+This program demonstrates:
+
+✔ Opening a file
+✔ Reading from a file
+✔ Writing its content to the terminal
+✔ Handling errors with errno, perror(), and strerror()
+
+📁 File Name: file_read_demo.c
