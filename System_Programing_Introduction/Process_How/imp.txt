@@ -16,3 +16,12 @@ stdout_save = dup(STDOUT_FILENO);
 
 dup(old_fd) creates a copy of the file descriptor.
 stdout_save = dup(1);
+
+fflush(stdout);
+✔ Why?
+
+printf uses buffered output.
+
+fflush(stdout) ensures all buffered text is written to the file before you switch stdout back to console.
+
+Otherwise, some text may not appear in the file.
