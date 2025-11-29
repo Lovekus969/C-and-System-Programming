@@ -1,0 +1,2 @@
+When a process is created, there are three file pointers are opened by default. They are defined in stdio.h header.
+These concepts are part of UNIX system programming and help you understand how stdin, stdout, and stderr work, and how redirection is done internally.
