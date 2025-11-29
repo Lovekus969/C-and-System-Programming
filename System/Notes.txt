@@ -61,3 +61,7 @@ inside this file we will get
 #define SYS_close       6
 ...
 
+These numbers are system call numbers.
+
+Every system call has a unique ID.
+This is how the kernel knows which service you are asking for.
