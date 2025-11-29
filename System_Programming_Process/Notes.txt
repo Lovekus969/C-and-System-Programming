@@ -69,3 +69,21 @@ Real UID = your ID
     They store your previous effective UID/GID so that a program can temporarily drop and regain privileges.
     
     Examples in system utilities.
+
+Process Control
+    
+    Process control involves:
+    
+    ✔ Creating new processes
+    
+    (using fork())
+    
+    ✔ Executing programs
+    
+    (using exec() family: execl, execvp, etc.)
+    
+    ✔ Terminating processes
+    
+    (using exit(), return, or signals)
+    
+    This is the foundation of UNIX process management.
