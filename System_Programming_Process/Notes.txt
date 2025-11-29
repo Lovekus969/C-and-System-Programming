@@ -32,3 +32,16 @@ Every running process gets a unique number from the OS.
         
         Returns PID of the calling process.
         Has its own memory, stack, file descriptors, registers, etc.
+
+Parent Process ID (PPID)
+    
+    Every process has a parent.
+    
+    Function:
+        pid_t getppid(void);
+        
+        Returns PID of your parent process.
+    Example:
+      
+      Terminal runs your program → terminal is parent
+      Your program's PPID = terminal’s PID
