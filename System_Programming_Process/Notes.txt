@@ -45,3 +45,21 @@ Parent Process ID (PPID)
       
       Terminal runs your program → terminal is parent
       Your program's PPID = terminal’s PID
+
+USER IDs and GROUP IDs
+          Processes run under a user and a group, which determine permissions.
+There are 3 types each:
+
+✔ Real ID (UID/GID)
+     The actual user who started the process.
+✔ Effective ID (EUID/EGID)
+    The user/group actually used for permission checking.
+    Often different when running sudo or setuid programs.
+Why do effective IDs exist?
+
+Example:
+passwd program allows updating /etc/shadow, which requires root permissions.
+
+Real UID = your ID
+
+Effective UID = root
