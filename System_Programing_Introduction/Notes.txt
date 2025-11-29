@@ -110,3 +110,17 @@ What is fork() in C?
     The newly created process is called the child.
     
     After calling fork(), both processes continue running the same code, but with different return values.
+
+
+How fork() Works
+➤ Syntax
+pid_t pid = fork();
+
+➤ Return Values
+
+fork() returns:
+
+Return value	Meaning
+< 0	Fork failed (no child created)
+0	Code running in the child process
+> 0	Code running in the parent process (value is child's PID)
