@@ -17,6 +17,17 @@ Almost every command you run in the terminal (ls, cd, cat, rm, etc.)
 Is actually a C program
 And that C program interacts with the UNIX kernel using system calls.
 
+Examples:
+  
+  open() → ask kernel to open a file
+  read() → ask kernel to read data
+  write() → ask kernel to write data
+  fork() → ask kernel to create a new process
+  exec() → ask kernel to load another program
+  getpid() → ask kernel to tell PID
+
+System Calls ≠ Library Functions
+This is very important.
 
 What is a System Call?
 
