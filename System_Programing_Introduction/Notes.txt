@@ -99,3 +99,14 @@ This program demonstrates:
 ✔ Handling errors with errno, perror(), and strerror()
 
 📁 File Name: file_read_demo.c
+
+
+What is fork() in C?
+
+    fork() is a system call in UNIX/Linux that creates a new process.
+    
+    The original process is called the parent.
+    
+    The newly created process is called the child.
+    
+    After calling fork(), both processes continue running the same code, but with different return values.
