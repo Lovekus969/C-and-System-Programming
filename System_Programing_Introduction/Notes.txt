@@ -175,3 +175,55 @@ This version teaches:
 ✔ system calls open(), read(), write(), lseek()
 ✔ process synchronization (turn-by-turn)
 ✔ Seeing different results in parent & child
+
+
+
+Mainly used functions 
+In the fork Tic-Tac-Toe program, here’s where we use them:
+
+1️⃣ lseek()
+lseek(fd, 0, SEEK_SET);
+
+
+fd → file descriptor of board.dat (like a pointer to the file)
+
+0 → offset in the file (start from beginning)
+
+SEEK_SET → set the position to the offset from the beginning
+
+💡 This tells the OS:
+“Start reading/writing from the start of the file.”
+
+2️⃣ read()
+read(fd, board, sizeof(board));
+
+
+fd → file descriptor
+
+board → memory buffer to store data (3x3 array)
+
+sizeof(board) → number of bytes to read
+
+💡 This copies the board from the file into memory, so the process knows the latest moves.
+
+3️⃣ write()
+write(fd, board, sizeof(board));
+
+
+fd → file descriptor
+
+board → memory buffer to write from
+
+sizeof(board) → number of bytes to write
+
+💡 This updates the shared file with the current board.
+
+4️⃣ Why lseek + read/write?
+
+Files are like streams of bytes.
+
+read() starts from the current file position
+
+write() starts from the current file position
+
+lseek(fd, 0, SEEK_SET) resets the file pointer to the beginning so we always read/write the whole board correctly.
