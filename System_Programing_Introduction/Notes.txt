@@ -164,3 +164,14 @@ Or shared memory (shmget) → advanced
 Or sockets → even more advanced
 
 For learning System Programming, using a shared file + fork() is PERFECT.
+
+
+ULL C PROGRAM: Tic-Tac-Toe Using fork() + Shared File
+
+This version teaches:
+
+✔ fork()
+✔ parent/child relationship
+✔ system calls open(), read(), write(), lseek()
+✔ process synchronization (turn-by-turn)
+✔ Seeing different results in parent & child
