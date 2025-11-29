@@ -34,3 +34,17 @@ What is a System Call?
 A system call is how a user program (written in C) talks to the Unix kernel.
 
 C Program (User)  --->  System Call  --->  Kernel (OS)
+
+Why do we need system calls?
+  
+  Because the user program cannot directly access hardware.
+  CPU protects everything using user mode → kernel mode.
+  
+  So, if you want to:
+      
+      open a file
+      create a process
+      access memory
+      communicate between processes
+      handle signals
+  You must call the OS through a system call.
