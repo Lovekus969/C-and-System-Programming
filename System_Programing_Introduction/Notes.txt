@@ -73,3 +73,17 @@ Because in the kernel, system calls are accessed with:
 
 mov $4, %eax      ; 4 = SYS_write
 int $0x80         ; interrupt to kernel
+
+Understanding errno in System Programming (UNIX/Linux)
+What is errno?
+
+errno is a global integer variable defined in the C Standard Library:
+#include <errno.h>
+
+It stores the error code of the last system call or library function that failed.
+
+Important facts:
+
+errno is not cleared on success → it only changes when a system call fails.
+
+So you must check the return value first, then check errno only if the return value indicates an error (usually -1).
