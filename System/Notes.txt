@@ -8,3 +8,18 @@ We will go step-by-step in this order:
 4️⃣ Sockets (TCP/UDP, client–server)
 5️⃣ Multi-threading (pthreads)
 6️⃣ Pipes (unnamed + named/FIFO)
+
+
+“UNIX commands are programs written in C that interact with the UNIX environment using system calls.”
+This means:
+
+Almost every command you run in the terminal (ls, cd, cat, rm, etc.)
+Is actually a C program
+And that C program interacts with the UNIX kernel using system calls.
+
+
+What is a System Call?
+
+A system call is how a user program (written in C) talks to the Unix kernel.
+
+C Program (User)  --->  System Call  --->  Kernel (OS)
