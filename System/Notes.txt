@@ -1,0 +1,10 @@
+SECTION 3 — UNIX SYSTEM PROGRAMMING (IN C)
+
+We will go step-by-step in this order:
+
+1️⃣ Process Creation (fork, exec, wait)
+2️⃣ Signals (signal, sigaction, kill, alarm)
+3️⃣ Inter-Process Communication (Shared Memory, Message Queues, Semaphores)
+4️⃣ Sockets (TCP/UDP, client–server)
+5️⃣ Multi-threading (pthreads)
+6️⃣ Pipes (unnamed + named/FIFO)
