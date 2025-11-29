@@ -9,3 +9,26 @@ gid_t getgid(void) – Returns: real group ID of calling process
 gid_t getegid(void) – Returns: effective group ID of calling process
 Process control includes creation of new processes, program execution & process termination.
 
+A program is:
+  
+  A file stored on disk
+  Usually in ELF format on Linux
+  Contains machine instructions + metadata
+  Not running yet
+  
+  👉 Example: a.out, ls, cat, or any compiled C program.
+Process
+    A process is:
+        
+        A program that is loaded into memory
+        Currently running or waiting
+        Has a unique PID
+
+Process ID (PID)
+
+Every running process gets a unique number from the OS.
+    Function:
+        pid_t getpid(void);
+        
+        Returns PID of the calling process.
+        Has its own memory, stack, file descriptors, registers, etc.
