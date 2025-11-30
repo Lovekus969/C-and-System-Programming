@@ -1,0 +1,3 @@
+What is a Message Queue?
+
+A Message Queue is an IPC (Inter-Process Communication) mechanism that allows processes to send and receive messages through the kernel.
