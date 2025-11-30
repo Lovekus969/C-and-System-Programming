@@ -1,1 +1,6 @@
-
+What Are Sockets?
+  
+  A socket is an IPC mechanism that allows two processes to communicate, either:
+  
+  ✔ On the same host
+  ✔ Or on different hosts across a network
