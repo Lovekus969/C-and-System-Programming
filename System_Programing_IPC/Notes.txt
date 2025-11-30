@@ -18,3 +18,16 @@ Example:
     Web servers
     Chat apps
     Client-server programs
+
+Pipes are the oldest form of UNIX System IPC and are provided by all UNIX systems.
+                    $ who |   wc -1              
+Pipes have two inherent limitations.
+Historically, pipes have been half duplex (i.e., data flows in only one direction). Some systems now provide full-duplex pipes, but to ensure maximum portability full-duplex pipe is not assumed.
+Pipes can be used only between processes that have a common ancestor.
+Despite these limitations, half-duplex pipes are still the most commonly used form of IPC. 
+Every time a sequence of commands in a pipeline is typed for the shell to execute, the shell creates a separate process for each command and links stdout of one process to stdin of next. 
+A pipe is created by calling the pipe() system call.
+int pipe(int fd[2])
+Two file descriptors are returned through fd argument:
+fd[0] is open for reading and fd[1] is open for writing.
+The output of fd[1] is the input for fd[0].
