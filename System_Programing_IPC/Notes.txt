@@ -38,3 +38,17 @@ Pipe
         Data flows like: writer → pipe → reader
         Usually used between parent and child processes
         Does not have a name (anonymous)
+
+simple, crystal-clear explanation of simplex, half-duplex, and full-duplex, especially useful for understanding pipes and communication systems.
+Simplex Communication
+👉 One-way communication
+
+Data flows in ONLY one direction.
+2. Half-Duplex Communication
+👉 Two-way communication but NOT at the same time
+
+Devices can send and receive but must take turns.
+3. Full-Duplex Communication
+👉 Two-way communication simultaneously
+
+Both sides can send and receive at the same time.s\
