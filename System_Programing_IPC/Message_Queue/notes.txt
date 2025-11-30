@@ -1,3 +1,13 @@
 What is a Message Queue?
 
 A Message Queue is an IPC (Inter-Process Communication) mechanism that allows processes to send and receive messages through the kernel.
+
+Very Short Summary (for fast revision)
+      
+      Message Queue = kernel mailbox for processes
+      msgget() = create/get queue
+      msgsnd() = send message (with type)
+      msgrcv() = receive message (by type)
+      msgctl() = stats/remove queue
+      Messages are independent units, NOT streams
+      Supports async and multi-process communication
