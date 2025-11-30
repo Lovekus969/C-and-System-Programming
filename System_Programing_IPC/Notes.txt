@@ -31,3 +31,10 @@ int pipe(int fd[2])
 Two file descriptors are returned through fd argument:
 fd[0] is open for reading and fd[1] is open for writing.
 The output of fd[1] is the input for fd[0].
+
+Pipe
+        
+        Unidirectional (one-way)
+        Data flows like: writer → pipe → reader
+        Usually used between parent and child processes
+        Does not have a name (anonymous)
