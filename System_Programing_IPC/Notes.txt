@@ -72,3 +72,9 @@ fd[0] → read end
 fd[1] → write end
 
 These are entries in the process’s File Descriptor Table.
+
+	The specification of the mode argument is the same as for the open function.
+What is Shared memory 
+Shared Memory is a special memory region created by the kernel, which two or more processes can access at the same time.
+It lets processes communicate VERY fast, because they read/write to the same memory instead of sending messages.
+
