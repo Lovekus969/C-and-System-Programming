@@ -1,1 +1,20 @@
 
+
+Unix Systems Programming
+Inter-Process Communication
+
+Socket
+    Most powerful and flexible network IPC
+
+Works between:
+  
+    Same machine
+    Different machines
+    Supports TCP (stream socket) and UDP (datagram socket)
+    Used in all network applications
+
+Example:
+
+    Web servers
+    Chat apps
+    Client-server programs
