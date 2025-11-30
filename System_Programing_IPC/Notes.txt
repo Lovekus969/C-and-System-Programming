@@ -51,4 +51,24 @@ Devices can send and receive but must take turns.
 3. Full-Duplex Communication
 👉 Two-way communication simultaneously
 
-Both sides can send and receive at the same time.s\
+Both sides can send and receive at the same time.
+
+Q. pipe() is a System Call
+
+When you write:
+
+int fd[2];
+pipe(fd);
+
+You are asking the kernel to create it.
+
+pipe() switches the CPU from user mode → kernel mode, and the kernel does all the work internally.
+✔ Step 2: Kernel creates two file descriptors
+
+The OS returns:
+
+fd[0] → read end
+
+fd[1] → write end
+
+These are entries in the process’s File Descriptor Table.
