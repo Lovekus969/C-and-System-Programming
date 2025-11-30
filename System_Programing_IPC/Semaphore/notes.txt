@@ -1,0 +1,10 @@
+Semaphore
+What is a Semaphore?
+
+A semaphore is a kernel-managed counter used to control access to a shared resource among multiple processes.
+
+Think of it like:
+
+   A key that controls entry
+   Only processes with permission (value > 0) can enter
+   When value = 0, all other processes must wait
