@@ -8,3 +8,44 @@ Think of it like:
    A key that controls entry
    Only processes with permission (value > 0) can enter
    When value = 0, all other processes must wait
+
+Important semctl Commands (Explained Simply)
+1. IPC_STAT
+
+📌 Copy semaphore status into user structure
+
+Used to read information about the semaphore set
+2. IPC_SET
+
+📌 Modify the permissions or parameters of the semaphore set
+3. IPC_RMID
+
+📌 Remove semaphore set from kernel
+4. GETVAL
+
+📌 Get the current value of a semaphore (like reading its counter)
+6. GETPID
+
+📌 Get PID of process that last performed semop on this semaphore
+
+Useful for debugging.
+
+7. GETNCNT
+
+📌 Number of processes waiting because semaphore value is negative (P operation blocked)
+
+8. GETZCNT
+
+📌 Number of processes waiting for semaphore value to become zero
+
+Used in synchronization tasks.
+
+9. GETALL
+
+📌 Get values of all semaphores in the set
+
+Used if nsems > 1.
+
+10. SETALL
+
+📌 Set values of all semaphores in the set at once.
