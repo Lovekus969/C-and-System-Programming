@@ -96,3 +96,6 @@ In simple words:
 
      Processes cannot normally talk to each other directly.
      IPC gives them a way to send messages, data, or signals
+Definition of Shared Memory
+  Shared Memory is an IPC (Inter-Process Communication) mechanism where two or more processes share the same physical memory region.
+  `  They can read and write to this memory directly, making it the fastest IPC technique.
