@@ -87,3 +87,12 @@ Process Control
     (using exit(), return, or signals)
     
     This is the foundation of UNIX process management.
+
+
+What is Inter-Process Communication (IPC)?
+    Inter-Process Communication (IPC) is the mechanism that allows two or more processes to communicate with each other or share data.
+
+In simple words:
+
+     Processes cannot normally talk to each other directly.
+     IPC gives them a way to send messages, data, or signals
