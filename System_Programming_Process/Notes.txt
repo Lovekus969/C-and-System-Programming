@@ -99,3 +99,18 @@ In simple words:
 Definition of Shared Memory
   Shared Memory is an IPC (Inter-Process Communication) mechanism where two or more processes share the same physical memory region.
   `  They can read and write to this memory directly, making it the fastest IPC technique.
+
+Why IPC is needed:
+
+    To share data between programs
+    To coordinate work between processes
+    To improve performance in multitasking systems
+
+Common IPC mechanisms:
+
+    Pipes
+    Message Queues
+    Shared Memory
+    Semaphores
+    Signals
+    Sockets
