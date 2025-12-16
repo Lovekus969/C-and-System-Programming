@@ -119,3 +119,12 @@ Common IPC mechanisms:
     Process creation is the act of creating a new process (running program) in an operating system.
       👉 A process = program in execution (not just a file).
       So, process creation means starting a new running program.
+
+Is Process Creation a function?
+
+ Yes, in Unix it is done using system calls (functions) provided by the OS.
+
+Main system calls:
+      fork() → creates a new process
+      exec() → loads a new program into a process
+      These are OS-level functions, not normal user functions.
