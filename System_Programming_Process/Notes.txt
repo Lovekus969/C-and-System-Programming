@@ -134,3 +134,22 @@ Where does Process Creation happen?
 Process creation happens:
           Inside the Operating System (Kernel)
           Triggered by a user program using system calls
+
+Why do we need Process Creation?
+        We need process creation because:
+
+1. Run multiple programs 
+    OS must run many programs at the same time
+
+2. Program isolation (safety)
+      Each process has separate memory
+      One crash does NOT crash others
+
+3. Parallel & multitasking
+      Parent and child can run simultaneously
+
+4. Resource management
+      OS tracks CPU, memory, files per process
+
+5. System services
+      Servers, daemons, background jobs
