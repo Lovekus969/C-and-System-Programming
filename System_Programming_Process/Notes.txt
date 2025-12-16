@@ -114,3 +114,8 @@ Common IPC mechanisms:
     Semaphores
     Signals
     Sockets
+
+  What is Process Creation?
+    Process creation is the act of creating a new process (running program) in an operating system.
+      👉 A process = program in execution (not just a file).
+      So, process creation means starting a new running program.
