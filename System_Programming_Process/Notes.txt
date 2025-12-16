@@ -128,3 +128,9 @@ Main system calls:
       fork() → creates a new process
       exec() → loads a new program into a process
       These are OS-level functions, not normal user functions.
+
+Where does Process Creation happen?
+
+Process creation happens:
+          Inside the Operating System (Kernel)
+          Triggered by a user program using system calls
