@@ -1,0 +1,8 @@
+PID and Return Values of fork()
+ Each process has a Process ID (PID).
+When fork() is called, it returns different values:
+
+Return Value	Meaning
+    0	This is the child process
+    > 0	This is the parent process (value = child PID)
+    < 0	Error (fork failed)
