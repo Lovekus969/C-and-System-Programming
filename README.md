@@ -1,0 +1,1 @@
+C was developed specifically for this purpose in the early 1970s by Dennis Ritchie at Bell Labs to write the UNIX operating system. Its design provides a crucial balance of high-level structure and low-level control, which makes it effective for system-level tasks. 
