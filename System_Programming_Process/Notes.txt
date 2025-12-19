@@ -1,3 +1,13 @@
+                                                                      Process Control in UNIX (fork, exec, wait)
+First: What is a Process?
+    A process is a running instance of a program with:
+
+Its own PID (Process ID)
+      Own memory (code, stack, heap, data)
+      Own registers and program counter
+      UNIX manages processes using system calls.
+
+
 A program is an executable file in ELF (Executable and Linkable Format) format.
 A process is an instance of a program in execution state. It has unique process identifier (PID).
 A process has various user and group IDs – real, effective and saved.
