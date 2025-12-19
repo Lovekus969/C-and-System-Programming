@@ -6,7 +6,21 @@ Its own PID (Process ID)
       Own memory (code, stack, heap, data)
       Own registers and program counter
       UNIX manages processes using system calls.
+fork() – Create a New Process
 
+🔹 What is fork()?
+
+fork() creates a new process (child) by duplicating the calling process (parent).
+
+🔹 Where does it work?
+
+    Kernel space creates the process
+    User program calls fork()
+
+OS allocates:
+
+          New PID
+          New memory space (copy-on-write)
 
 A program is an executable file in ELF (Executable and Linkable Format) format.
 A process is an instance of a program in execution state. It has unique process identifier (PID).
