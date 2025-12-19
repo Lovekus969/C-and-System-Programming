@@ -7,6 +7,16 @@ Why we need it:
       To understand how software actually runs on hardware
       To build fast, efficient, and reliable programs
       To work on OS-level tools (shells, compilers, servers, drivers)
+
+Process (System_Programming_Process)
+ What it is:
+    A process is a program that is currently running in memory.
+Key ideas:
+            
+            fork() → create a new process
+            exec() → replace process code
+            wait() → wait for child process
+
 SECTION 3 — UNIX SYSTEM PROGRAMMING (IN C)
 
 We will go step-by-step in this order:
