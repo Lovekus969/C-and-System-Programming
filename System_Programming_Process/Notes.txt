@@ -182,8 +182,18 @@ Why do we need Process Creation?
 3. Parallel & multitasking
       Parent and child can run simultaneously
 
+
 4. Resource management
       OS tracks CPU, memory, files per process
 
 5. System services
       Servers, daemons, background jobs
+
+
+Summary
+
+kill(pid, SIGKILL) → sends signal to kernel
+Kernel delivers signal to child process
+Child is terminated immediately
+Signal does not appear in output unless a handler is set (not possible for SIGKILL)
+kill() is the function you call in your code; the kernel handles the rest
