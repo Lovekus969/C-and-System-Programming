@@ -201,3 +201,9 @@ How kill(pid, SIGKILL) Works Internally
 0️⃣ Big Picture (One Line)
 
 kill() is a system call that asks the kernel to deliver a signal to a process.
+User Space vs Kernel Space
+
+Your program runs in user space
+The OS (Linux kernel) runs in kernel space
+
+kill(pid, SIGKILL);
