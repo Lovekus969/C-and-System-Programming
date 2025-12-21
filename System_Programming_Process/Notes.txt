@@ -6,6 +6,16 @@ Its own PID (Process ID)
       Own memory (code, stack, heap, data)
       Own registers and program counter
       UNIX manages processes using system calls.
+
+What does “creation in the kernel” mean?
+     Creation in the kernel means the operating system kernel is responsible for creating and managing system objects, such as:
+
+    Processes
+    Threads
+    Memory spaces
+    File descriptors
+
+
 fork() – Create a New Process
 
 🔹 What is fork()?
