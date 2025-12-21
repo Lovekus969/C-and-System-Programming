@@ -1,0 +1,21 @@
+Q: Does kill() kill immediately?
+
+❌ No
+✔️ Kernel schedules signal delivery
+
+Q: Where does signal “show up”?
+
+✔️ Inside kernel’s pending signal list
+
+Q: Why SIGKILL can’t be caught?
+
+✔️ Kernel enforces termination
+
+Q: Is kill() a library function?
+
+❌ No
+✔️ It’s a system call
+
+1️⃣0️⃣ One-Line Summary (Remember This)
+
+kill() sends a signal request to the kernel; the kernel delivers the signal and takes action based on the signal type.
