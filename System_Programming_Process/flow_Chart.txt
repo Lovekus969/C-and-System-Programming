@@ -1,0 +1,19 @@
+Parent (user space)
+    |
+    | kill(pid, SIGKILL)
+    v
+Kernel
+    |
+    | validate PID & permission
+    | find task_struct
+    | add SIGKILL to pending signals
+    |
+Scheduler
+    |
+    | deliver signal
+    v
+Child process
+    |
+    | forced termination
+    v
+Zombie → wait() → removed
